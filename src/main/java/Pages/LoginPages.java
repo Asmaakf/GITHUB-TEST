@@ -28,7 +28,7 @@ public class LoginPages extends BaseClass {
 
     public void passwordField() {
         WebElement fieldPassword = driver.findElement(password);
-        fieldPassword.sendKeys("Asmaa.1421");
+        fieldPassword.sendKeys("*******");
     }
 
     public void loginBtn() {
