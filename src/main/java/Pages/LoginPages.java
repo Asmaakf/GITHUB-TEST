@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import static ObjectsPath.LoginObjects.*;
 
 
-
+//LOGIN
 public class LoginPages extends BaseClass {
     WebDriver driver  = null;
 
