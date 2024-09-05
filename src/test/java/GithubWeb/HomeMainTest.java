@@ -3,13 +3,20 @@ package GithubWeb;
 import Base.BaseClass;
 import Pages.LoginPages;
 import Pages.MainPages;
+import io.qameta.allure.*;
 import org.testng.annotations.Test;
+
 
 public class HomeMainTest extends BaseClass {
 
 
 
     @Test
+    @Epic("About flow")
+    @Feature("About page")
+    @Story("User navigate to the About page")
+    @Owner("Asmaa")
+    @Severity(SeverityLevel.BLOCKER)
         public void homeMainPageMethod() throws  InterruptedException{
             MainPages aboutL = new MainPages(driver);
 
@@ -17,7 +24,7 @@ public class HomeMainTest extends BaseClass {
             Thread.sleep(2000);
 
             aboutL.aboutLink();
-            Thread.sleep(2000);
+            Thread.sleep(4000);
 
         }
 
